@@ -1,0 +1,9 @@
+[Unit]
+Description=Pulseaudio
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/pulseaudio --start
+
+[Install]
+WantedBy=multi-user.target
