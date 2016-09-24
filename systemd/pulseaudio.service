@@ -3,7 +3,9 @@ Description=Pulseaudio
 
 [Service]
 Type=forking
-ExecStart=/usr/bin/pulseaudio --start
+ExecStart=/usr/bin/pulseaudio -D
+Restart=always
+User=<my user with privs>
 
 [Install]
 WantedBy=multi-user.target
