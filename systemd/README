@@ -1,0 +1,13 @@
+systemd service file used on Raspberry Pi 3 Raspbarian
+# systemctl enable pulseaudio
+Created symlink from /etc/systemd/system/multi-user.target.wants/pulseaudio.service to /etc/systemd/system/pulseaudio.service.
+# systemctl start pulseaudio
+# systemctl status pulseaudio
+● pulseaudio.service - Pulseaudio
+   Loaded: loaded (/etc/systemd/system/pulseaudio.service; enabled)
+   Active: inactive (dead) since Fri 2016-09-23 22:41:20 PDT; 3s ago
+  Process: 834 ExecStart=/usr/bin/pulseaudio --start (code=exited, status=0/SUCCESS)
+
+Sep 23 22:41:20 buckrodgers systemd[1]: Started Pulseaudio.
+# pidof pulseaudio
+714
